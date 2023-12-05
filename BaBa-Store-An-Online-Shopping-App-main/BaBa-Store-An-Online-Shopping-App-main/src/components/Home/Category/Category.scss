@@ -1,0 +1,62 @@
+@import "../../../css-config/mixins.scss";
+/* YourComponent.scss */
+/* Category.scss */
+
+.shop-by-category {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sec-heading {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include md {
+      margin-bottom: 35px;
+      font-size: 24px;
+  }
+  &:after {
+      content: "";
+      display: block;
+      margin-top: 5px;
+      width: 50px;
+      height: 3px;
+      background-color: #8e2de2;
+      @include md {
+          margin-top: 10px;
+      }
+  }
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category {
+  width: calc(25% - 10px); /* Adjust the width and spacing as needed */
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .category-title {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+  }
+}

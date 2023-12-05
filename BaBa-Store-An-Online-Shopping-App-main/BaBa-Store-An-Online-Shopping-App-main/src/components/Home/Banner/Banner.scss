@@ -1,0 +1,14 @@
+@import "../../../css-config/mixins.scss";
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Set the maximum height to 90vh */
+  
+    .carousel-item {
+      img {
+        max-width: 100%; /* Ensure the images fit within their container */
+        max-height: 70%; /* Ensure the images fit within the container's height */
+      }
+    }
+  }
